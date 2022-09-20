@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es2019", //Utiliza 
+    "moduleResolution": "node", //Ambiente node js 
+    "module": "commonjs",
+    "lib": ["es2019"], //importa tudo do ecmascript
+    "sourceMap": true, //quando fizer compilação, irá gerar um mapa
+    "outDir": "dist", //diretorio para onde irá o codigo compilado
+    "strict": true, //
+    "noImplicitAny": true, // não permite setar tipo any no codigo
+    "strictNullChecks": true, // não pode adicionar null, ou undefined
+    "strictFunctionTypes": true, //
+    "noImplicitThis": true, // não assumir this nas funções
+    "resolveJsonModule": true,
+    "alwaysStrict": true,
+    "removeComments": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".", //root
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@test/*": ["./test/*"]
+    },
+    "rootDirs": [
+      "./src",
+      "./test"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./test/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules/*",
+    "dist"
+  ]
+}

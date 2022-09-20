@@ -1,0 +1,47 @@
+{
+  "name": "projeto-typescript-api",
+  "version": "1.0.0",
+  "description": "Typescript API\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[T",
+  "main": "index.js",
+  "scripts": {
+    "style:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
+    "style:fix": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "build": "tsc",
+    "start:dev": "ts-node-dev 'src/index.ts'",
+    "start": "npm run build && node dist/src/index.js",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "test:functional": "jest --projects ./test --runInBand",
+    "test:unit": "jest"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "api",
+    "jest"
+  ],
+  "author": "Lucas Libório",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/config": "^0.0.41",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
+    "@types/module-alias": "^2.0.1",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "prettier": "^2.5.1",
+    "supertest": "^6.2.2",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@overnightjs/core": "^1.7.6",
+    "@types/node": "^17.0.21",
+    "axios": "^0.26.0",
+    "body-parser": "^1.19.2",
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "module-alias": "^2.2.2",
+    "ts-jest": "^27.1.3"
+  }
+}
